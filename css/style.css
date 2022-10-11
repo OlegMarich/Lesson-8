@@ -1,0 +1,326 @@
+@font-face {
+  font-family: 'Lato';
+  src: url(../fonts/Lato-Black.woff2) format('woff2'),
+    url(../fonts/Lato-Black.woff) format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url(../fonts/Lato-Bold.woff2) format('woff2'),
+    url(../fonts/Lato-Bold.woff) format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url(../fonts/Lato-Regular.woff2) format('woff2'),
+    url(../fonts/Lato-Regular.woff) format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/*------------------------------------------------------*/
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  background-color: #e5e5e5;
+  color: #424551;
+}
+[class*='__container'] {
+  max-width: 1230px;
+  padding: 0 5px;
+  margin: 0 auto;
+}
+.about {
+}
+.about__container {
+}
+.about__cources {
+  max-width: 600px;
+}
+.about__title {
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 1.3;
+  color: #1e212c;
+  margin-bottom: 40px;
+}
+.page__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 48px;
+}
+.page__subtitle {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 150%;
+  color: #1e212c;
+  margin-bottom: 24px;
+}
+.page__list {
+  margin: 0px 0px 172px 0px;
+}
+.page__list-item {
+}
+.page__list-item:not(:last-child) {
+  margin-bottom: 4px;
+}
+.page__list-item::before {
+  background: url(../img/check.svg) 0 0 no-repeat;
+  content: '';
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  margin-right: 16px;
+}
+
+.course-curator {
+}
+.course-curator__container {
+}
+.course-curator__title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #1e212c;
+  margin-bottom: 8px;
+}
+.course-curator__name {
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 130%;
+  color: #1e212c;
+  margin-bottom: 16px;
+}
+.course-curator__description {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #787a80;
+  margin-bottom: 32px;
+}
+
+.course-curator__list {
+  margin: 0px 0px 32px 0px;
+}
+.course-curator__list-item-1 {
+  margin-bottom: 4px;
+}
+.course-curator__list-item-1::before {
+  background: url(../img/Star.svg) 0 0 no-repeat;
+  content: '';
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  margin-right: 8px;
+}
+.course-curator__list-item-2 {
+  margin-bottom: 4px;
+}
+.course-curator__list-item-2::before {
+  background: url(../img/Play.svg) 0 0 no-repeat;
+  content: '';
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  margin-right: 8px;
+}
+.course-curator__list-item-3 {
+}
+.course-curator__list-item-3::before {
+  background: url(../img/Profile.svg) 0 0 no-repeat;
+  content: '';
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  margin-right: 8px;
+}
+.socials {
+  margin: 0px 0px 0px 0px;
+}
+.socials__image {
+  display: inline-block;
+}
+.socials__image:not(:last-child) {
+  padding-right: 24px;
+}
+
+/* ===========================Практика=========================== */
+.link__hover:hover {
+  display: inline-block;
+  margin-bottom: 30px;
+  color: greenyellow;
+  background-color: #794f45;
+  font-size: 30px;
+}
+
+.block__hover {
+  margin-bottom: 30px;
+  max-width: 800px;
+  padding: 15px;
+  color: #fff;
+  background-color: #794f45;
+  font-size: 30px;
+}
+
+.block__hover:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* active */
+.block__active {
+  margin-bottom: 30px;
+  max-width: 800px;
+  padding: 15px;
+  color: #fff;
+  background-color: #77608d;
+  font-size: 30px;
+}
+.link__active {
+  max-width: 200px;
+  display: inline-block;
+  color: #fff;
+  margin-bottom: 30px;
+  background-color: #77608d;
+}
+.link__active:hover {
+  color: red;
+  font-size: 30px;
+  display: inline-block;
+  text-decoration: underline;
+}
+.link__active:active {
+  color: #fff;
+  background-color: burlywood;
+  border-radius: 5%;
+  font-size: 30px;
+  text-decoration: underline;
+}
+.block__active:hover {
+  color: red;
+  font-size: 30px;
+  text-decoration: underline;
+}
+.block__active:active {
+  color: #fff;
+  cursor: pointer;
+  background-color: burlywood;
+  border-radius: 5%;
+  font-size: 30px;
+  text-decoration: underline;
+}
+/*  */
+ul {
+  margin: 0px 0px 30px 20px;
+}
+ul ul {
+  display: none;
+}
+ul li:hover ul {
+  margin: 0px 0px 0px 20px;
+  display: block;
+}
+
+/* visited */
+.link__visited:visited {
+  color: red;
+}
+/* focus */
+.link__focus:focus {
+  display: inline-block;
+  margin-bottom: 30px;
+  outline: 1px solid red;
+}
+/* target */
+.link__target {
+}
+.block__target {
+  background-color: #77608d;
+  color: #fff;
+  padding: 15px;
+  display: none;
+}
+.block__target:target {
+  display: block;
+}
+/* first-last child */
+.text {
+  background-color: #7a956b;
+  padding: 15px;
+  color: #fff;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+.text p:not(:last-child) {
+  margin-bottom: 15px;
+}
+.text p:first-of-type {
+  text-transform: uppercase;
+  /* color: red ; */
+}
+.text p:last-of-type {
+  text-transform: uppercase;
+  /* color: red; */
+}
+
+/* nth child */
+.text-nth {
+  background-color: #77608d;
+  padding: 15px;
+  color: #fff;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+.text-nth p:not(:last-child) {
+  margin-bottom: 15px;
+}
+.text-nth p:nth-child(1) {
+  background-color: #7a956b;
+}
+/*not*/
+.block {
+  background-color: #77608d;
+  padding: 15px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.block__title {
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.block__text {
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+.block__link {
+  display: inline-block;
+  color: yellow;
+  margin-bottom: 20px;
+}
+.block__link:hover {
+  text-decoration: underline;
+}
+.block > *:last-child {
+  margin-bottom: 0;
+}
+
+.list {
+  background-color: #7a956b;
+  color: #fff;
+  padding: 15px;
+  margin-bottom: 30px;
+}
+.list__item:not(:last-child) {
+  margin-bottom: 15px;
+}
